@@ -23,11 +23,11 @@ Javascript. Foi utilizada também a linguagem de marcação HTML e linguagem de 
 
 ### Como testar a aplicação? 
 Para executar a aplicação localmente, basta clonar o seguinte repositório:
-https://github.com/equipe-pi-2020/calculadora
+https://github.com/equipe-pi-2020/calculadora-2023.git
 em seguida clique no index.html
 
 Caso não opte por executar localmente, disponibilizamos abaixo um link usando o servidor do GitHub:
-https://equipe-pi-2020.github.io/calculadora/
+https://equipe-pi-2020.github.io/calculadora-2023/
 
 ### Vídeo Tutorial
 
