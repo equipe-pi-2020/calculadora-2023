@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- import para estilização do alert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!--Importando fontes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;600&family=Cabin:wght@700&display=swap"
+        rel="stylesheet">
+
+    <!--Importando Icon Github-->
+    <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+    <title>Minerva - Calculadora Freelancer</title>
+
+</head>
+
+<body>
+
+    <!-- estrutura load-page -->
+    <div class="load-page">
+        <div class="load-img">
+            <img src="../public/load.svg" alt="Imagem de carregamento">
+        </div>
+    </div>
+    <!-- fim da estrutura load-page -->
+
+    <div class="container">
+        <div>
+            <h1 class="page-title">
+                MINERVA
+            </h1>
+            <h2 class="page-subtitle">
+                CALCULADORA FREELANCE
+            </h2>
+        </div>
+
+        <h3>Preencha os dados para calcular</h3>
+        <section class="questions">
+            <div class="question1 question">
+                <p class="p-form">Qual nome escolhido do seu Job?</p>
+                <input type="text" id="nomeJob" value="" placeholder="Nome do Job ">
+            </div>
+            <fieldset>
+                <div class="question">
+                    <p class="p-form">Quanto eu quero ganhar por mês?</p>
+                    <input type="number" id="valorMes" value="" placeholder="R$ 0 ">
+                </div>
+                <div class="question">
+                    <p class="p-form">Quantas horas quero trabalhar por dia?</p>
+                    <input type="number" id="valorHorasDia" value="" placeholder="Número de horas ">
+                </div>
+            </fieldset>
+            <fieldset>
+                <div class="question">
+                    <p class="p-form">Quantos dias quero trabalhar por semana?</p>
+                    <input type="number" id="valorSemana" value="" placeholder="Dias por semana ">
+                </div>
+                <div class="question">
+                    <p class="p-form">Estimativa de horas para esse Job?</p>
+                    <input type="number" id="horasJob" value="" placeholder="Horas para concluir o Job ">
+                </div>
+            </fieldset>
+        </section>
+        <button type="submit" onclick="mostrarResultado()">CALCULAR</button>
+
+        <div class="resultado-tela">
+            <div class="value question">
+                <p class="p-result">Valor da sua hora de trabalho</p>
+                <input type="text" id="valorHoraTrabalho" value="" placeholder="R$ 0 " readonly>
+            </div>
+            <div class="value question">
+                <p id="result" class="p-result">Valor do projeto</p>
+                <input type="text" id="ValorJob" value="" placeholder="R$ 0 " readonly>
+            </div>
+            <h2 id="selectTable"></h2>
+            <h2 id="table"></h2>
+            <!-- <h2 id="columnAdd"></h2> -->
+        </div>
+        <!-- <div>
+                <iframe src="http://localhost:8080/" width="780" height="480" allowfullscreen></iframe>
+            </div> -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer class="p-footer">
+            <div>
+                <p>Projeto Integrador 5º Período</p>
+            </div>
+
+            <div class="icone">
+                <a href="https://github.com/equipe-pi-2020/calculadora"><span class="iconify"
+                        data-icon="akar-icons:github-fill" style="font-size: 40px; color: #029ef2;"></span></a>
+            </div>
+        </footer>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

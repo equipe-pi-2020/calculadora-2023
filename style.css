@@ -1,0 +1,493 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Div de carregamento */
+
+.load-page {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.load-page img {
+  position: absolute;
+  width: 120px;
+  left: 45%;
+  top: 35%;
+  transform: translateX(-50%);
+  transform: translateY(-50%);
+  animation: loading 6s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* fim da div de carregamento */
+
+body {
+  width: 100%;
+  font-family: 'Advent Pro';
+  background-color: #029ef2;
+  text-align: center;
+}
+
+/* --------------questionario--------------------------- */
+
+.container {
+  position: absolute;
+}
+
+.page-title {
+  width: 100% 0;
+  text-align: right;
+  margin-top: 4rem;
+  margin-right: 10rem;
+  margin-bottom: 4rem;
+  font-size: 6rem;
+}
+
+.page-title-index {
+  width: 100% 0;
+  text-align: center;
+  margin-top: 4rem;
+  margin-right: 10rem;
+  margin-bottom: 4rem;
+  font-size: 6rem;
+}
+
+.enunciated {
+  text-align: left;
+  padding-right: 1.5rem;
+  font-weight: bold;
+  padding-left: 5rem;
+  background: #029ef2;
+}
+
+.questions {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.question1 {
+  width: 100%;
+}
+
+.question {
+  margin: 2rem;
+}
+
+.question input {
+  border-radius: 6px;
+  height: 3rem;
+  width: 32rem;
+  padding-left: 0.5rem;
+}
+
+fieldset {
+  border: none;
+}
+
+h2 {
+  font-family: 'Cabin';
+  font-size: 3rem;
+  text-align: right;
+  margin-top: -4rem;
+  margin-right: 10rem;
+  margin-bottom: 8rem;
+}
+
+h3 {
+  font-family: 'Cabin';
+  font-size: 1.6rem;
+}
+
+.p-form {
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.p-result {
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.6rem;
+  padding: 0.3rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.1rem;
+  color: #fff;
+  text-align: right;
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  width: auto;
+}
+
+input {
+  font-size: 1rem;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#valorHoraTrabalho,
+#ValorJob {
+  box-shadow: none;
+  width: 25rem;
+}
+
+.value {
+  width: 100% 0;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.value input {
+  width: 16rem;
+  height: 4rem;
+  text-align: right;
+  font-size: 3rem;
+  font-weight: bold;
+  padding-right: 0.5rem;
+  color: #029ef2;
+
+}
+
+#tela {
+  width: 15.5rem;
+  height: 2rem;
+  margin-bottom: .75rem;
+}
+
+button {
+  background: #36B336;
+  color: #ffffff;
+  margin: 2rem;
+  padding: 1.25rem;
+  border-radius: 11px;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.resultado-tela {
+  margin-left: 3%;
+  margin-right: auto;
+}
+
+/* Footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 65px;
+  width: 100%;
+  background-color: #000;
+}
+
+.p-footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  font-family: 'Cabin', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  margin-top: 50px;
+  border-top: 1px solid #fff;
+}
+
+.p-footer-index {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  font-family: 'Cabin', sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  margin-top: 50px;
+  border-top: 1px solid #fff;
+}
+
+.icone {
+  position: absolute;
+  right: 7%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Tabela */
+
+div .selectTable {
+  text-align: center;
+  margin: 3.5rem auto;
+}
+
+table.selectTable {
+  background-color: #029ef2;
+  min-width: 80%;
+  height: auto;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left: 12rem;
+}
+
+table.selectTable td,
+table.selectTable th {
+  border-bottom: 1px solid #fff;
+  padding: 3px 4px;
+}
+
+table.selectTable tbody td {
+  font-size: 1.25rem;
+  color: #fff;
+  padding-left: 1rem;
+}
+
+table.selectTable thead {
+  background: #029ef2;
+  border-bottom: 2px solid #ffffff;
+}
+
+table.selectTable thead th {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.idNumber {
+  width: 2rem;
+}
+
+.exclui {
+  text-align: center;
+}
+
+.buttonExcluir {
+  background: #c21e01;
+  color: #6e1100;
+  text-align: center;
+  height: 2rem;
+  width: 90%;
+  left: 50%;
+  cursor: pointer;
+  transition: background 0.4s ease-in-out;
+}
+
+.buttonExcluir:hover {
+  background: #6e1100;
+  color: #c21e01;
+}
+
+div .table {
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+}
+
+table.table {
+  background-color: #029ef2;
+  width: 80%;
+  height: 12rem;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+table.table td,
+table.table th {
+  border: 1px solid #fff;
+  padding: 3px 4px;
+}
+
+table.table tbody td {
+  font-size: 1.25rem;
+  color: #ffffff;
+  padding-left: 1rem;
+}
+
+table.table thead {
+  background: #029ef2;
+  border-bottom: 2px solid #fff;
+}
+
+table.table thead th {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  border-left: 2px solid #fff;
+}
+
+table.table thead th:first-child {
+  border-left: none;
+}
+
+th:nth-child(4) {
+  width: 8rem;
+}
+
+.idNumber {
+  width: 2rem;
+}
+
+@media (max-width: 1151px) {
+  .page-title {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .logo {
+    margin-left: 5vw;
+    width: 15vw;
+  }
+
+  .load-page img {
+    display: none;
+  }
+
+  #menu-icon {
+    width: 10vw;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 414px) {
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  #menu-mobile {
+    overflow: hidden;
+  }
+
+  #menu-mobile a {
+    margin: 1rem 0 2rem;
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+  }
+
+  .close-button {
+    font-size: 2rem;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .p-form {
+    font-size: 0.9rem;
+  }
+
+  .question input {
+    width: 14rem;
+  }
+
+  button {
+    width: 8rem;
+    height: 4rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .p-result {
+    font-size: 1.2rem;
+    width: 14rem;
+  }
+
+  #valorHoraTrabalho,
+  #ValorJob {
+    width: 14rem;
+    font-size: 2rem;
+  }
+
+  .icone {
+    right: 0;
+  }
+
+  .p-footer {
+    font-size: 0.8rem;
+    width: 70%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 375px) {
+  div .selectTable {
+    width: 80%;
+  }
+
+  table.selectTable thead th {
+    font-size: 1.2rem;
+  }
+
+  table.selectTable tbody td {
+    font-size: 0.9rem;
+  }
+
+  #notDep,
+  #addDep {
+    width: auto;
+  }
+}
+
+@media (max-width: 280px) {
+  h2 {
+    font-size: 1rem;
+  }
+
+  div .selectTable {
+    width: 80%;
+  }
+
+  table.selectTable thead th {
+    font-size: 0.9rem;
+  }
+
+  table.selectTable tbody td {
+    font-size: 0.8rem;
+  }
+
+  .buttonExcluir {
+    font-size: 0.7rem;
+  }
+}
